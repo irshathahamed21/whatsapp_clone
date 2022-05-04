@@ -1,0 +1,6 @@
+.app {
+  display:grid;
+  height:100vh;
+  background-color: azure;
+  place-items: center;
+}
