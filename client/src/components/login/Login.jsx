@@ -5,6 +5,7 @@ import {signInWithPopup} from "firebase/auth";
 import {useStateValue} from "../../context/StateProvider";
 import {actionTypes} from "../../context/reducer"
 import "./login.css"
+
 function Login() {
     const[state, dispatch] = useStateValue()
     console.log(state)
@@ -14,7 +15,11 @@ function Login() {
             dispatch({
                 type:actionTypes.SET_USER,
                 user:result.user
-            })}
+            }
+            
+            )
+            console.log(result)
+        }
         )
         .catch((error) => {console.log("error",error)})
     }
