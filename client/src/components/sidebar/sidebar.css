@@ -51,6 +51,11 @@
     outline: none;
     margin-left: 10px;
 }
+.sidebar__chats {
+    flex:1;
+    background:white;
+    overflow: scroll;
+}
 
 
 
